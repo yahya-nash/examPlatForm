@@ -1,0 +1,188 @@
+#auth
+{
+    height: 680px;
+    background: #ff7979;
+}
+  /** 2.9 Forms **/
+  .form-group {
+    margin-bottom: 0.7rem;
+  }
+  .form-group label {
+    font-size: 0.755rem;
+    text-transform: uppercase;
+    color: rgba(35, 28, 99, 0.7);
+    font-weight: 500;
+  }
+  .form-group small {
+    font-size: 0.7rem;
+  }
+  .form-group.with-title {
+    position: relative;
+  }
+  .form-group.with-title label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 0.6rem;
+    background-color: #e9ecef;
+    width: 100%;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .form-group.with-title .form-control, .form-group.with-title dataTable-input {
+    padding-top: 2rem;
+  }
+  .form-group.with-title .form-control:focus ~ label, .form-group.with-title dataTable-input:focus ~ label {
+    border-left: 1px solid #5A8DEE;
+    border-top: 1px solid #5A8DEE;
+    border-right: 1px solid #5A8DEE;
+  }
+  .form-group[class*=has-icon-].has-icon-left .form-control {
+    padding-left: 2.5rem;
+  }
+  .form-group[class*=has-icon-].has-icon-left .form-control-icon {
+    left: 0;
+  }
+  .form-group[class*=has-icon-].has-icon-right .form-control {
+    padding-right: 2.5rem;
+  }
+  .form-group[class*=has-icon-].has-icon-right .form-control-icon {
+    right: 0;
+  }
+  .form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon i, .form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon svg {
+    color: #5A8DEE;
+  }
+  .form-group[class*=has-icon-] .form-control-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0.6rem;
+  }
+  .form-group[class*=has-icon-] .form-control-icon i, .form-group[class*=has-icon-] .form-control-icon svg {
+    width: 1.2rem;
+   }
+  /** 2.12 Card **/
+  .card {
+    top: 80px;
+    box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+    margin-bottom: 2.2rem;
+  }
+  .card.card-statistic {
+    box-shadow: 1px 2px 5px rgba(47, 170, 244, 0.5);
+    background: linear-gradient(to bottom, #25a6f1, #54b9ff);
+    border: none;
+  }
+  .card.card-statistic .card-title {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .card.card-statistic .card-right p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .card.card-statistic .card-right span.green {
+    color: #6fff6f;
+  }
+  .card.card-statistic .card-right span.red {
+    color: #ff7979;
+  }
+  .card.card-statistic .chart-wrapper {
+    height: 100px;
+  }
+  .card .card-header {
+    border: none;
+  }
+  .card .card-header h4 {
+    font-size: 1.2rem;
+  }
+  .card .card-header ~ .card-body {
+    padding-top: 0;
+  }
+  .card .card-content {
+    position: relative;
+  }
+  .card .card-title {
+    font-size: 1.2rem;
+  }
+  .card .card-body {
+    padding: 1.4rem 1.7rem;
+  }
+  .card .card-heading {
+    color: #555;
+    font-size: 1.5rem;
+  }
+  .card .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .card .card-img-overlay p {
+    color: #eee;
+  }
+  .card .card-img-overlay .card-title {
+    color: #fff;
+  }
+  
+  .pricing .card {
+    box-shadow: none;
+    margin-bottom: 0;
+    border-right: 1px solid #e9ecef;
+    box-shadow: 0 10px 10px #e9ecef;
+    margin-bottom: 0.5rem;
+  }
+  .pricing h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  .pricing .card-header .card-title {
+    font-size: 2rem !important;
+    margin-bottom: 0;
+  }
+  .pricing .card-header p {
+    font-size: 0.8rem;
+  }
+  .pricing ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  .pricing ul li i, .pricing ul li svg {
+    width: 1rem;
+    color: #39DA8A;
+    font-size: 1rem;
+    margin-right: 7px;
+  }
+  .pricing .card-highlighted {
+    background-color: #5A8DEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pricing .card-highlighted .card-header, .pricing .card-highlighted .card-body {
+    background-color: #5A8DEE;
+    color: #fff;
+  }
+  .pricing .card-highlighted ul li {
+    color: #fff;
+  }
+  .pricing .card-highlighted ul li i, .pricing .card-highlighted ul li svg {
+    color: tint-color(#28a745, 2);
+  }
+  .pricing .card-highlighted .card-footer {
+    background-color: #5A8DEE;
+  }
+  .pricing .card-highlighted .card-title {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  .center{
+
+text-align: center;
+align-items: center;
+margin-right: 12rem !important;
+margin-bottom: 1rem;
+  }

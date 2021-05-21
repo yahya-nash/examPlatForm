@@ -1,0 +1,516 @@
+
+/* -----------------------------
+--------------------------
+------------------------------------ */
+
+  
+ {
+    box-sizing: border-box;
+  }
+     
+  html.open, body.open {
+    height: 100%;
+    overflow: hidden;
+  } 
+   
+  html {
+    /* padding: 40px; */
+    /* font-size: 62.5%;  */
+  }   
+  body {
+   
+    width: 100%;
+    /* padding: 20px; */
+    /* background:linear-gradient(  #757f9a 20% , #f1f5f9 70% )  ; */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    /* font-size: 1.6rem; */
+    font-family: 'Lato', sans-serif;
+  }  
+/*   --------------
+-----------------------
+----------------------------
+ */
+ 
+.slidebar
+{
+    width: 280px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background: #37474f;
+    color: #fff;
+    z-index: 20;
+    transition: left 300ms;
+}
+
+
+.slidebar-brand{
+    height: 70px;
+}
+
+.brand-icon span
+{
+font-size: 1.5rem;
+margin-left: .5rem;
+
+
+}
+.brand-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.slidebar-user{
+    margin:0rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.slidebar-user img{
+    width: 110px;
+    height: 110px;
+    border-radius:50%;
+    border-top: 2px solid #efefef;
+    border-radius: 2px solid #efefef;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid #efefef;
+    position: center;
+
+
+}
+.slidebar-user h3{
+font-size: 1rem ;
+}
+.slidebar-user span{
+    font-size: .85rem;
+}
+
+
+.slidebar-menu{
+    margin-top: 3rem;
+}
+.menu-head{
+    text-transform: uppercase;
+    color: #8da2fb;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+.slidebar-menu ul{
+    margin-bottom: .8rem;
+}
+.slidebar-menu li a{
+    color: #efefef;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+
+
+}
+
+.slidebar-menu li a:hover{
+    color: #efefef;
+    font-size: .9.5rem;
+    text-decoration:underline indianred;   
+ 
+    
+    };
+
+
+
+}
+.slidebar-menu li a span{
+    font-size: .95rem;
+    display: inline-block;
+    margin-right: .8rem;
+
+
+}
+
+
+.slidebar-menu li{
+    margin-bottom: .9rem;
+
+}
+
+.main-content
+{
+    height: 100%;
+    margin-left: 280px;
+    transition: margin-left 300ms;
+
+
+}
+
+header {
+    display: flex;
+    height: 70px;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transition: left 300ms;
+    z-index: 20;
+    box-shadow: 4px 4px 10px rgba(0,0, 0, 0.1);
+    
+
+}
+.menu-toggle label{
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items:center;
+    border-radius: 50%;
+}
+
+.menu-toggle label:hover{
+    background: #efefef;
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+
+.header-icon span{
+    display:inline-block;
+    margin-left: .7rem;
+    font-size: 1.4rem;
+
+}
+
+#main{
+    padding: 1.5rem ;
+    background: #f1f5f9;
+    /* height: 100%; */
+    min-height: calc(260vh - 70px); 
+
+}
+
+main .header-actions  .page-header{
+
+    display:inline-block;
+
+}
+.header-actions button{
+    outline: none;
+    color: #fff;
+    background-color:  #6495ED;
+    background: #5850ec;
+    border: none;
+    padding: .6rem 1rem;
+    margin-left: 1rem;
+    margin-top: 3px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.header-actions button span{
+  font-size: 1.2rem;
+  margin-right: .6rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ --------------------------
+ ------------------------------
+ ----------------------------------------- */
+  p {
+    text-align: center;
+    margin: 20px 0 60px;
+  }
+   
+  main {
+    background-color: #2C3845;
+  }
+   
+  h1 {
+    text-align: center;
+    font-weight: 300;
+  }
+   
+  table {
+    display: block;
+  }
+   
+  tr, td, tbody, tfoot {
+    display: block;
+  }
+   
+  thead {
+    display: none;
+  }
+   
+  tr {
+    padding-bottom: 10px;
+  }
+   
+  td {
+    padding: 10px 10px 0;
+    text-align: center;
+  }
+  td:before {
+    content: attr(data-title);
+    color: #7a91aa;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    display: block;
+  }
+    table {
+    width: 100%;
+  }
+   
+  th {
+    text-align: left;
+    font-weight: 700;
+  }
+   
+  thead th {
+    background-color: #202932;
+    color: #fff;
+    border: 1px solid #202932;
+  }
+   
+  tfoot th {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #b8c4d2;
+  }
+   
+  .button {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: rgb(204, 27, 27);
+  }
+   .button:hover{
+       background-color: rgba(202, 17, 17, 0.747);
+       
+   }
+   
+  .select {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #28333f;
+  }
+  .select:before {
+    display: none;
+  }
+   
+  .detail {
+    background-color: #BD2A4E;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  .detail.open {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+   
+  .detail-container {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 500px;
+  }
+   
+  dl {
+    margin: 0;
+    padding: 0;
+  }
+   
+  dt {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+   
+  dd {
+    margin: 0 0 40px 0;
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ac2647;
+    box-shadow: 0 1px 0 #c52c51;
+  }
+   
+  .close {
+    background: none;
+    padding: 18px;
+    color: #fff;
+    font-weight: 300;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    line-height: 1;
+    font-size: 1.8rem;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    -moz-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    -webkit-transition: border 0.3s linear;
+    transition: border 0.3s linear;
+  }
+  .close:hover, .close:focus {
+    background-color: #a82545;
+    border: 1px solid #a82545;
+  }
+   
+  @media (min-width: 460px) {
+    td {
+      text-align: left;
+    }
+    td:before {
+      display: inline-block;
+      text-align: right;
+      width: 140px;
+    }
+   
+    .select {
+      padding-left: 160px;
+    }
+  }
+  @media (min-width: 720px) {
+    table {
+      display: table;
+    }
+   
+    tr {
+      display: table-row;
+    }
+   
+    td, th {
+      display: table-cell;
+    }
+   
+    tbody {
+      display: table-row-group;
+    }
+   
+    thead {
+      display: table-header-group;
+    }
+   
+    tfoot {
+      display: table-footer-group;
+    }
+   
+    td {
+      border: 2px solid #28333f;
+    }
+    td:before {
+      display: none;
+    }
+   
+    td, th {
+      padding: 10px;
+    }
+   
+    tr:nth-child(2n+2) td {
+      background-color: #242e39;
+    }
+   
+    tfoot th {
+      display: table-cell;
+    }
+   
+    .select {
+      padding: 10px;
+    }
+  }
+
+  .delete{
+      width:100%;
+      height: 700px;
+      display:inline-block ;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+  }
+    .delete p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+
+    }
+    form
+    {
+        color:#fff;
+        font-size: 20px;
+    }
+  .delete input{
+      margin-right: 10px;
+      width: 300px;
+      height: 40px;
+      box-shadow: 0 0 0 1px rgba(200, 27, 27, 0.4);
+  }
+
+
+  .delete button{
+   
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(204, 27, 27);
+    border-radius: 10px;
+    border: 2px solid rgb(82, 2, 2);
+
+    
+  }
+
+
+  .delete button:hover{
+    background-color: rgba(214, 14, 14, 0.801);
+    
+}
+
+
+
+/* -------------------------------------- */
+#main{
+  background: #90a4ae;
+}
