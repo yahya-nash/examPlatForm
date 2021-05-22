@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Admin Login </title>
+    <title>Wise Quiz </title>
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
         <!-- ***************  link logo  **********-->
@@ -42,7 +42,7 @@
                                     <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                                     <li class="scroll-to-section"><a href="#Courses " class="menu-item">Coureses</a></li>
                                     <li class="scroll-to-section"><a href="/login">SingUp</a>
-                                    <li class="scroll-to-section"><a href="/Contact"  >Contact</a>
+                                    <li class="scroll-to-section"><a href="#about"  >about</a>
 
                                     </li>
                                     <li class="submenu">
@@ -188,23 +188,23 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="contact-form">
-                    <form id="contact" action="" method="post">
+                    <form id="contact" action="/wiseQuize" method="post">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <fieldset>
-                                    <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                    <input name="feedBackName" type="text" id="name" placeholder="Full Name" required=""
                                         style="background-color: rgba(250,250,250,0.3);">
                                 </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <fieldset>
-                                    <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                    <input name="feedBackEmail" type="email" id="email" placeholder="E-Mail Address"
                                         required="" style="background-color: rgba(250,250,250,0.3);">
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                    <textarea name="feedBackMessage" rows="6" id="message" placeholder="Your Message"
                                         required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
                                 </fieldset>
                             </div>
@@ -235,70 +235,4 @@
 <br>
 
    <!-- ***** Footer Start ***** -->
-
-<div class="footer-dark">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-
-                    <h3>Services</h3>
-                    <ul>
-                      <li><a href="wise quiz.html.#Courses">Courses</a></li>
-                      <li><a href="#">Quiz page</a></li>
-                      <li><a href="wise quiz.html.#Contact">Contact Us</a></li>
-                  </ul>
-                    
-                </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-  
-                      <li><a href="wise quiz.html">Web WISE Quiz </a></li>
-                      <li><a href="wise quiz.html">App WISE Quiz</a></li>
-                      <li><a href="#">Login In</a></li>
-                  </ul>
-            
-                </div>
-                <div class="col-md-6 item text">
-                    <h3>Company Name</h3>
-                    <p>Wise Quiz app and website</p>
-                </div>
-                   
-                <div class="social-media">
-                    <ul>
-                       <a href="wise quiz.html" ><li><img title="WISE quiz " src="img/logo.png" alt="images WISE QUIZ"></li></a>
-                       <a href=""> <li><img title="Twitter" src="img/twitter.png" alt="images Twitter"></li> </a>
-                        <a href=""> <li><img title="Google" src="img/google.png" alt="images Google"></li></a>
-                        <a href=""> <li><img title="facebook" src="img/facebook.png" alt="images facebook"></li></a>
-    
-                    </ul>
-                </div>
-        </div>
-    </footer>
-    <!-- ***** Footer End ***** -->
-
-
-  
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="js/owl-carousel.js"></script>
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imgfix.min.js"></script>
-
-    <!-- Global Init -->
-    <script src="js/custom.js"></script>
-
-</body>
-</html>
+   <%- include('homeFooter') -%>
