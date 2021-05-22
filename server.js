@@ -49,7 +49,7 @@ passport.use(User.createStrategy());
 passportConfig(passport, User, GoogleStrategy, FacebookStrategy);
 passportAuthenticationProcess(app, User, passport);
 
-
+//no change
 app.get("/", (req, res) => {
     res.render("wiseQuiz");
 });
